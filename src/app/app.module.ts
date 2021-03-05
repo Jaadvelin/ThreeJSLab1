@@ -12,15 +12,16 @@ import { ThreeComponentComponent} from './three-component/three-component.compon
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ThreeComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatSliderModule,
-    ThreeComponentComponent
+    MatSliderModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

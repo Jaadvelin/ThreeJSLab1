@@ -1,19 +1,11 @@
 <!-- <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate" #progressbar></mat-progress-bar> -->
 <!-- <router-outlet></router-outlet> -->
-<div class="container pt-5">
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <h1>Settings</h1>
-      <h2>color</h2>
-      <mat-slider></mat-slider>
-    </div>
-    <div class="col-12 col-lg-6">
-
-      <app-three-component>
-        
-      </app-three-component>
-      
-
-    </div>
+<div class="row">
+  <div class="col-12">
+    <app-three-component [(rotation)]="rotation"></app-three-component>
+  </div>
+  <div class="col-12 d-flex justify-content-center">
+    <h2>Rotate</h2>
+    <mat-slider [(ngClass)]="rotation"></mat-slider>
   </div>
 </div>

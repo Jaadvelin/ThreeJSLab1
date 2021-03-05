@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
+import { ThreeComponentComponent} from './three-component/three-component.component';
 
-import * as three from 'three';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import * as three from 'three';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatSliderModule
+    MatSliderModule,
+    ThreeComponentComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

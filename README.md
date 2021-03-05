@@ -1,6 +1,6 @@
 # ThreeJSLab1
 
-To run project you need node, then run the following commands in order:  
+To run project you need [node](https://nodejs.org/en/), then run the following commands in order inside the project folder:  
 -`npm install`  
 -`npm start`  
 

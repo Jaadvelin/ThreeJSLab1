@@ -5,7 +5,12 @@
     <app-three-component [(rotation)]="rotation"></app-three-component>
   </div>
   <div class="col-12 d-flex justify-content-center">
-    <h2>Rotate</h2>
-    <mat-slider [(ngClass)]="rotation"></mat-slider>
+    <h2>Rotatation speed</h2>
+    <mat-slider
+      [(ngModel)]="rotation"
+      tickInterval="1"
+      min="0"
+      max="10"
+    ></mat-slider>
   </div>
 </div>

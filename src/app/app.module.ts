@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+
 import { ThreeComponentComponent} from './three-component/three-component.component';
 
 
@@ -20,8 +23,9 @@ import { ThreeComponentComponent} from './three-component/three-component.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatSliderModule
-    
+    MatSliderModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

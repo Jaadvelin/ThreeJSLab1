@@ -1,14 +1,36 @@
 <div class="row">
-  <div class="col-12">
-    <app-three-component [(rotation)]="rotation"></app-three-component>
-  </div>
-  <div class="col-12 d-flex justify-content-center">
-    <h2>Rotatation speed</h2>
+  <div class="col-12 d-flex justify-content-center mt-3">
+    <h2 class="px-3">Rotatation X</h2>
     <mat-slider
-      [(ngModel)]="rotation"
+      [(ngModel)]="rotationX"
       tickInterval="1"
       min="0"
       max="10"
     ></mat-slider>
+  </div>
+  <div class="col-12 d-flex justify-content-center mt-3">
+    <h2 class="px-3">Rotatation Y</h2>
+    <mat-slider
+      [(ngModel)]="rotationY"
+      tickInterval="1"
+      min="0"
+      max="10"
+    ></mat-slider>
+  </div>
+  <div class="col-12 d-flex justify-content-center mt-3">
+    <h2 class="px-3">Rotatation Z</h2>
+    <mat-slider
+      [(ngModel)]="rotationZ"
+      tickInterval="1"
+      min="0"
+      max="10"
+    ></mat-slider>
+  </div>
+  <div class="col-12">
+    <app-three-component
+      [(rotationX)]="rotationX"
+      [(rotationY)]="rotationY"
+      [(rotationZ)]="rotationZ"
+    ></app-three-component>
   </div>
 </div>

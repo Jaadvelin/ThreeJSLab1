@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'InvestigacionUI1';
-  public rotation = 0;
+  public rotationX = 0;
+  public rotationY = 0;
+  public rotationZ = 0;
 }

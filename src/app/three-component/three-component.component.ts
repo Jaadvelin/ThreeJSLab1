@@ -16,7 +16,9 @@ export class ThreeComponentComponent implements OnInit {
   public camera;
   public mesh;
   public stats;
-  @Input() rotation;
+  @Input() rotationX;
+  @Input() rotationY;
+  @Input() rotationZ;
 
   constructor() {
 
@@ -56,7 +58,6 @@ export class ThreeComponentComponent implements OnInit {
 
     }
     renderLoop() {
-        console.log("rotation type", typeof this.rotation);
         this.renderer.render(this.scene, this.camera);
         this.updateScene();
         requestAnimationFrame(this.renderLoop.bind(this));
@@ -64,9 +65,9 @@ export class ThreeComponentComponent implements OnInit {
 
 
     updateScene() {
-        this.mesh.rotation.y = this.mesh.rotation.y + (this.rotation / 100);
-        // this.mesh.rotation.x = this.mesh.rotation.x + this.rotation;
-        // this.mesh.rotation.z = this.mesh.rotation.z + this.rotation;
+        this.mesh.rotation.x =  this.rotationX / 10;
+        this.mesh.rotation.y =  this.rotationY / 10;
+        this.mesh.rotation.z =  this.rotationZ / 10;
     }
 
     // manejo de eventos
